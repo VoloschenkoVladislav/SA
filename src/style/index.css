@@ -1,0 +1,339 @@
+.expert-analysis .expert-analysis__control a, .analytic-main .analytic-main__links a, .analytic-main .analityc-main__delete, .new-problem .new-problem__links a {
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 10px 20px;
+  transition-duration: 0.4s;
+  background: #d3dee8;
+  width: auto; }
+
+.expert-analysis .expert-analysis__control a:hover, .analytic-main .analytic-main__links a:hover, .analytic-main .analityc-main__delete:hover, .new-problem .new-problem__links a:hover {
+  background: #90acc5; }
+
+body {
+  margin: 0;
+  font-family: sans-serif; }
+
+.select h1 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 3em; }
+
+.select .select__button-block {
+  display: flex;
+  justify-content: space-around; }
+  .select .select__button-block a {
+    text-decoration: none;
+    color: black; }
+  .select .select__button-block .main-menu__button p {
+    font-size: 1.5em;
+    font-weight: 500; }
+  .select .select__button-block .select__button {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    width: 280px;
+    height: 280px;
+    overflow: hidden;
+    border: 2px black solid;
+    border-radius: 15px;
+    transition-duration: 0.4s;
+    background: #d3dee8; }
+  .select .select__button-block .select__button:hover {
+    background: #90acc5; }
+
+.auth {
+  text-align: center;
+  padding-top: 150px;
+  display: flex;
+  justify-content: space-around; }
+  .auth .auth__form {
+    border: 2px black solid;
+    border-radius: 15px;
+    width: auto;
+    padding: 0 30px; }
+    .auth .auth__form .auth__head {
+      border-bottom: black solid 2px;
+      font-size: 1.2em;
+      font-weight: 500; }
+    .auth .auth__form .auth__body {
+      margin: 30px 0 30px; }
+    .auth .auth__form a {
+      margin: 20px;
+      display: block;
+      color: black;
+      text-decoration: none;
+      border: 2px solid black;
+      border-radius: 10px;
+      padding: 10px 20px;
+      transition-duration: 0.4s;
+      background: #d3dee8; }
+    .auth .auth__form a:hover {
+      background: #90acc5; }
+
+.expert-main header {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .expert-main header a {
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: #d3dee8;
+    padding: 12px;
+    font-weight: 500;
+    transition-duration: 0.4s; }
+  .expert-main header a:hover {
+    background: #90acc5; }
+  .expert-main header p {
+    color: #6b6b6b;
+    display: inline-block;
+    margin-right: 20px; }
+  .expert-main header h1 {
+    font-weight: 500;
+    font-size: 3em; }
+
+.expert-main .expert-main__body {
+  display: flex; }
+  .expert-main .expert-main__body .expert-main__problem, .expert-main .expert-main__body .expert-main__alts {
+    border: 2px solid black;
+    border-radius: 15px;
+    margin: 10px 30px; }
+  .expert-main .expert-main__body .expert-main__alts {
+    padding: 20px;
+    width: 300px; }
+  .expert-main .expert-main__body .expert-main__problem {
+    width: 500px; }
+    .expert-main .expert-main__body .expert-main__problem .expert-main__problem-selector {
+      border-bottom: 2px solid black;
+      padding: 15px; }
+      .expert-main .expert-main__body .expert-main__problem .expert-main__problem-selector select {
+        font-size: 1.2em;
+        width: 100%;
+        padding: 10px; }
+    .expert-main .expert-main__body .expert-main__problem .expert-main__problem-desription {
+      padding: 15px; }
+
+.expert-main .expert-main__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+  .expert-main .expert-main__footer a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: #d3dee8;
+    padding: 12px;
+    font-weight: 500;
+    transition-duration: 0.4s;
+    float: right; }
+  .expert-main .expert-main__footer a:hover {
+    background: #90acc5; }
+
+.expert-analysis h1 {
+  padding: 20px;
+  font-weight: 500;
+  font-size: 3em; }
+
+.expert-analysis .expert-analysis__problem-description div {
+  padding: 0px 30px; }
+
+.expert-analysis .expert-analysis__control {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between; }
+
+.expert-analysis .expert-analysis__dialog-window {
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 20px;
+  margin: 20px; }
+  .expert-analysis .expert-analysis__dialog-window p {
+    font-size: 1.8em;
+    font-weight: 300;
+    margin-bottom: 10px; }
+  .expert-analysis .expert-analysis__dialog-window .expert-analysis__choose-block {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    height: 120px; }
+    .expert-analysis .expert-analysis__dialog-window .expert-analysis__choose-block div {
+      padding: 10px 5px;
+      width: 30%;
+      border: 2px solid black;
+      border-radius: 15px;
+      margin: 15px 5px;
+      transition-duration: 0.4s; }
+    .expert-analysis .expert-analysis__dialog-window .expert-analysis__choose-block .expert-analysis__alt {
+      background: #8BC0F0; }
+    .expert-analysis .expert-analysis__dialog-window .expert-analysis__choose-block .expert-analysis__alt:hover {
+      background: #318fe4; }
+    .expert-analysis .expert-analysis__dialog-window .expert-analysis__choose-block .expert-analysis__equal {
+      background: #D3DEE8; }
+    .expert-analysis .expert-analysis__dialog-window .expert-analysis__choose-block .expert-analysis__equal:hover {
+      background: #90acc5; }
+
+.analytic-main {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+  .analytic-main header {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0;
+    padding-bottom: 0; }
+    .analytic-main header a {
+      text-decoration: none;
+      color: black;
+      border: 2px solid black;
+      border-radius: 15px;
+      background-color: #d3dee8;
+      padding: 12px;
+      font-weight: 500;
+      transition-duration: 0.4s; }
+    .analytic-main header a:hover {
+      background: #90acc5; }
+    .analytic-main header p {
+      color: #6b6b6b;
+      display: inline-block;
+      margin-right: 20px; }
+    .analytic-main header h1 {
+      font-weight: 500;
+      font-size: 3em; }
+  .analytic-main .analytic-main__empty {
+    font-size: 30px; }
+  .analytic-main .analytic-main__body {
+    display: flex;
+    justify-content: space-between; }
+    .analytic-main .analytic-main__body .analytic-main__selector {
+      width: 300px; }
+      .analytic-main .analytic-main__body .analytic-main__selector p {
+        width: 300px;
+        display: flex; }
+        .analytic-main .analytic-main__body .analytic-main__selector p b {
+          margin-right: 10px; }
+      .analytic-main .analytic-main__body .analytic-main__selector select {
+        font-size: 20px;
+        width: 280px; }
+  .analytic-main .analytic-main__solution {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 0px 190px 0px 30px;
+    padding: 0;
+    border: 2px solid #000;
+    border-radius: 10px;
+    max-height: 360px;
+    overflow: auto; }
+    .analytic-main .analytic-main__solution .analytic-main__header-row {
+      font-size: 30px;
+      font-weight: lighter;
+      border-bottom: 2px solid #000; }
+      .analytic-main .analytic-main__solution .analytic-main__header-row .analytic-main__alts, .analytic-main .analytic-main__solution .analytic-main__header-row .analytic-main__weights {
+        margin-top: 0; }
+      .analytic-main .analytic-main__solution .analytic-main__header-row .analytic-main__alts {
+        text-align: start;
+        border-right: 2px solid #000; }
+    .analytic-main .analytic-main__solution .analytic-main__not-solved {
+      border-bottom: 2px solid #000;
+      margin: 0;
+      padding: 10px; }
+    .analytic-main .analytic-main__solution .analytic-main__header-row, .analytic-main .analytic-main__solution .analytic-main__row {
+      display: flex;
+      justify-content: space-between; }
+    .analytic-main .analytic-main__solution .analytic-main__alts, .analytic-main .analytic-main__solution .analytic-main__weights {
+      padding: 10px;
+      text-align: center; }
+    .analytic-main .analytic-main__solution .analytic-main__alts {
+      width: 230px;
+      margin: 0;
+      margin-right: 20px;
+      border-right: 2px solid #000; }
+    .analytic-main .analytic-main__solution .analytic-main__weights {
+      margin: 0;
+      text-align: center;
+      width: 100px; }
+  .analytic-main .analytic-main__links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 30px; }
+    .analytic-main .analytic-main__links a {
+      margin-bottom: 30px; }
+  .analytic-main .analytic-main__not-solved {
+    margin-bottom: 30px; }
+  .analytic-main .analytic-main__empty {
+    margin: 30px 30px 350px; }
+
+.new-problem h1 {
+  font-weight: 500;
+  font-size: 3em;
+  margin-left: 30px; }
+
+.new-problem form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  max-height: 450px;
+  overflow: auto; }
+  .new-problem form label {
+    margin-right: 30px; }
+
+.new-problem .new-problem__links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0; }
+
+.new-problem .new-problem__alts input {
+  margin: 10px 0px 10px 10px;
+  width: 500px; }
+
+.new-problem .new-problem__input {
+  margin: 0px 0px 20px; }
+  .new-problem .new-problem__input input[name="description"] {
+    width: 400px; }
+
+.new-problem .new-problem__buttons {
+  margin-left: 140px; }
+  .new-problem .new-problem__buttons .new-problem__add-alt, .new-problem .new-problem__buttons .new-problem__del-alt {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px 10px;
+    width: 80px;
+    margin: 20px;
+    outline: none;
+    transition-duration: 0.3s; }
+  .new-problem .new-problem__buttons .new-problem__add-alt {
+    background-color: rgba(58, 189, 40, 0.562); }
+  .new-problem .new-problem__buttons .new-problem__add-alt:hover {
+    background-color: rgba(19, 63, 13, 0.562); }
+  .new-problem .new-problem__buttons .new-problem__del-alt {
+    background-color: rgba(194, 41, 41, 0.562); }
+  .new-problem .new-problem__buttons .new-problem__del-alt:hover {
+    background-color: rgba(68, 14, 14, 0.562); }

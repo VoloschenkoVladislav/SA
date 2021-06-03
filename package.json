@@ -2,20 +2,34 @@
   "name": "system_analysis",
   "version": "0.1.0",
   "private": true,
+  "main": "electron/main.js",
+  "productName": "Экспертная система",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.8.3",
+    "aws-sdk": "^2.880.0",
+    "express": "^4.17.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "sqlite3": "^5.0.2",
     "web-vitals": "^1.1.0"
   },
+  "homepage": "./",
   "scripts": {
-    "start": "react-scripts start",
+    "start": "set BROWSER=none && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "electron": "electron .",
+    "build-electron": "mkdir build/electron && robocopy electron build/electron /S",
+    "dev-electron": "set ELECTRON_START_URL=http://localhost:3000 && electron .",
+    "sass": "node-sass --watch ./src/style/style.sass -o ./src/style",
+    "dev": "run-p dev-electron sass",
+    "devstart": "run-p dev start",
+    "package": "electron-builder build --mac --win -c.extraMetadata.main=build/electron/main.js --publish never"
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +48,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "electron": "^12.0.0",
+    "electron-builder": "^22.10.5",
+    "node-sass": "^5.0.0",
+    "npm-run-all": "^4.1.5"
   }
 }

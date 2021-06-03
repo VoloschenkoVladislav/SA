@@ -1,0 +1,413 @@
+$custom_blue: #d3dee8
+
+%button
+    display: inline-block
+    color: black
+    text-decoration: none  
+    border: 2px solid black
+    border-radius: 15px
+    padding: 10px 20px
+    transition-duration: 0.4s
+    background: $custom_blue
+    width: auto
+
+%button-hover
+    background: darken($custom_blue, 20%)
+
+body
+    margin: 0
+    font-family: sans-serif
+
+.select
+    h1
+        text-align: center
+        font-weight: 400
+        font-size: 3em
+    .select__button-block
+        display: flex
+        justify-content: space-around
+        a
+            text-decoration: none
+            color: black
+
+        .main-menu__button
+            p
+                font-size: 1.5em
+                font-weight: 500
+
+        .select__button
+            text-align: center
+            display: flex
+            flex-direction: column
+            justify-content: space-around
+            padding: 10px
+            width: 280px
+            height: 280px
+            overflow: hidden
+            border: 2px black solid
+            border-radius: 15px
+            transition-duration: 0.4s
+            background: $custom_blue
+
+        .select__button:hover
+            background: darken($custom_blue, 20%)
+
+
+
+.auth
+    text-align: center
+    padding-top: 150px
+    display: flex
+    justify-content: space-around
+    .auth__form
+        border: 2px black solid
+        border-radius: 15px
+        width: auto
+        padding: 0 30px
+        .auth__head
+            border-bottom: black solid 2px
+            font-size: 1.2em
+            font-weight: 500
+        .auth__body
+            margin: 30px 0 30px
+        a
+            margin: 20px
+            display: block
+            color: black
+            text-decoration: none  
+            border: 2px solid black
+            border-radius: 10px
+            padding: 10px 20px
+            transition-duration: 0.4s
+            background: $custom_blue
+        a:hover
+            background: darken($custom_blue, 20%)
+
+        
+.expert-main
+    header
+        padding: 20px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        a
+            text-decoration: none
+            color: black
+            border: 2px solid black
+            border-radius: 15px
+            background-color: $custom_blue
+            padding: 12px
+            font-weight: 500
+            transition-duration: 0.4s
+        a:hover
+            background: darken($custom_blue, 20%)
+        p
+            color: #6b6b6b
+            display: inline-block
+            margin-right: 20px
+        h1
+            font-weight: 500
+            font-size: 3em
+
+    .expert-main__body
+        display: flex
+        .expert-main__problem,.expert-main__alts
+            border: 2px solid black
+            border-radius: 15px
+            margin: 10px 30px
+        
+        .expert-main__alts
+            padding: 20px
+            width: 300px
+
+        .expert-main__problem
+            width: 500px
+            .expert-main__problem-selector
+                border-bottom: 2px solid black
+                padding: 15px
+                select
+                    font-size: 1.2em
+                    width: 100%
+                    padding: 10px
+            .expert-main__problem-desription
+                padding: 15px
+    
+    .expert-main__footer
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 20px
+        position: absolute
+        bottom: 0
+        left: 0
+        right: 0
+        a
+            display: block
+            text-decoration: none
+            color: black
+            border: 2px solid black
+            border-radius: 15px
+            background-color: $custom_blue
+            padding: 12px
+            font-weight: 500
+            transition-duration: 0.4s
+            float: right
+        a:hover
+            background: darken($custom_blue, 20%)
+
+
+.expert-analysis
+    h1
+        padding: 20px
+        font-weight: 500
+        font-size: 3em
+
+    .expert-analysis__problem-description
+        div
+            padding: 0px 30px
+
+    .expert-analysis__control
+        a
+            @extend %button
+        a:hover
+            @extend %button-hover
+        
+        display: flex
+        padding: 20px
+        justify-content: space-between
+
+    .expert-analysis__dialog-window
+        text-align: center
+        border: 2px solid black
+        border-radius: 20px
+        margin: 20px
+        p
+            font-size: 1.8em
+            font-weight: 300
+            margin-bottom: 10px
+
+        .expert-analysis__choose-block
+            display: flex
+            align-items: stretch
+            justify-content: space-around
+            height: 120px
+            div
+                padding: 10px 5px
+                width: 30%
+                border: 2px solid black
+                border-radius: 15px
+                margin: 15px 5px
+                transition-duration: 0.4s
+            .expert-analysis__alt
+                background: #8BC0F0
+            .expert-analysis__alt:hover
+                background: darken(#8BC0F0, 20%)
+            .expert-analysis__equal
+                background: #D3DEE8
+            .expert-analysis__equal:hover
+                background: darken(#D3DEE8, 20%)
+
+            
+.analytic-main
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+
+    
+
+    header
+        padding: 20px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-top: 0
+        padding-bottom: 0
+        a
+            text-decoration: none
+            color: black
+            border: 2px solid black
+            border-radius: 15px
+            background-color: $custom_blue
+            padding: 12px
+            font-weight: 500
+            transition-duration: 0.4s
+        a:hover
+            background: darken($custom_blue, 20%)
+        p
+            color: #6b6b6b
+            display: inline-block
+            margin-right: 20px
+        h1
+            font-weight: 500
+            font-size: 3em
+
+    .analytic-main__empty
+        font-size: 30px
+
+    .analytic-main__body
+        display: flex
+        justify-content: space-between
+
+        .analytic-main__selector
+            width: 300px
+            p
+                width: 300px
+                display: flex
+                b
+                    margin-right: 10px
+            select
+                font-size: 20px
+                width: 280px
+
+    .analytic-main__solution
+        display: flex
+        flex-direction: column
+        width: 400px
+        margin: 0px 190px 0px 30px
+        padding: 0
+        border: 2px solid #000
+        border-radius: 10px
+        max-height: 360px
+        overflow: auto
+
+        .analytic-main__header-row
+            font-size: 30px
+            font-weight: lighter
+            border-bottom: 2px solid #000
+
+            .analytic-main__alts,.analytic-main__weights
+                margin-top: 0
+
+            .analytic-main__alts
+                text-align: start
+                border-right: 2px solid #000
+
+        .analytic-main__not-solved
+            border-bottom: 2px solid #000
+            margin: 0
+            padding: 10px
+
+        .analytic-main__header-row,.analytic-main__row
+            display: flex
+            justify-content: space-between
+
+        .analytic-main__alts,.analytic-main__weights
+            padding: 10px
+            text-align: center
+            
+
+        .analytic-main__alts
+            width: 230px
+            margin: 0
+            margin-right: 20px
+            border-right: 2px solid #000
+        
+            
+        .analytic-main__weights
+            margin: 0
+            text-align: center
+            width: 100px
+
+    .analytic-main__links
+        display: flex
+        align-items: center
+        justify-content: space-between
+        position: absolute
+        bottom: 0
+        right: 0
+        left: 0
+        margin: 30px
+        a
+            @extend %button
+            margin-bottom: 30px
+        a:hover
+            @extend %button-hover
+
+    .analytic-main__not-solved
+        margin-bottom: 30px
+    
+    .analytic-main__empty
+        margin: 30px 30px 350px
+
+    .analityc-main__delete
+        @extend %button
+
+    .analityc-main__delete:hover
+        @extend %button-hover
+
+
+
+
+
+
+
+
+
+
+
+
+.new-problem
+    h1
+        font-weight: 500
+        font-size: 3em
+        margin-left: 30px
+    
+    form
+        display: flex
+        flex-direction: column
+        margin-left: 30px
+        max-height: 450px
+        overflow: auto
+
+
+        label
+            margin-right: 30px
+
+    .new-problem__links
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin: 30px
+        position: absolute
+        bottom: 0
+        right: 0
+        left: 0
+        a
+            @extend %button
+        a:hover
+            @extend %button-hover
+
+    .new-problem__alts
+        input
+            margin: 10px 0px 10px 10px
+            width: 500px
+    
+    .new-problem__input
+        margin: 0px 0px 20px
+        input[name="description"]
+            width: 400px
+
+    .new-problem__buttons
+        margin-left: 140px
+        .new-problem__add-alt,.new-problem__del-alt
+            border: 1px solid black
+            border-radius: 10px
+            padding: 5px 10px
+            width: 80px
+            margin: 20px
+            outline: none
+            transition-duration: 0.3s
+
+        .new-problem__add-alt
+            background-color: rgba(58, 189, 40, 0.562)
+
+        .new-problem__add-alt:hover
+            background-color: darken(rgba(58, 189, 40, 0.562), 30%)
+
+        .new-problem__del-alt
+            background-color: rgba(194, 41, 41, 0.562)
+
+        .new-problem__del-alt:hover
+            background-color: darken(rgba(194, 41, 41, 0.562), 30%)

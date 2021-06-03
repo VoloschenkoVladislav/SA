@@ -1,0 +1,536 @@
+$dark_blue: #263f56
+$background_grey: #e5e5e5
+    
+body
+    margin: 0
+    background-color: $background_grey
+    font-family: sans-serif
+
+a
+    text-decoration: none
+    outline: none
+
+input
+    outline: none
+
+.select
+    h1
+        text-align: center
+        font-size: 36px
+        font-weight: 500
+        margin-top: 120px
+        margin-bottom: 50px
+    .select__button-block
+        display: flex
+        justify-content: space-around
+        a
+            color: white
+            background-color: $dark_blue
+            height: 250px
+            width: 230px
+            padding: 20px
+            border-radius: 10px
+            text-decoration: none
+            text-align: center
+            transition-duration: 0.5s
+            .main-menu__button
+                font-weight: 700
+                font-size: 24px
+                margin-bottom: 70px
+            .main-menu__description
+                font-weight: 100
+                font-size: 14px
+        a:hover
+            background-color: lighten($dark_blue, 10%)
+
+header
+    margin: 0
+    color: white
+    height: 60px
+    background-color: $dark_blue
+    display: flex
+    justify-content: space-between
+    a
+        color: $background_grey
+        font-size: 14px
+        text-decoration: none
+        margin: 0 10px
+        transition-duration: 0.3s
+        padding: 22px 10px
+    a:hover
+        background-color: lighten($dark_blue, 10%)
+    h1
+        margin: 10px
+        text-align: center
+        width: 250px
+        font-size: 18px
+        font-weight: 300
+        display: inline-block
+    .right-part
+        justify-content: flex-end
+        align-items: center
+        display: flex
+        width: 300px
+    .left-part
+        justify-content: flex-start
+        align-items: center
+        display: flex
+        width: 300px
+    p
+        padding: 10px 30px
+
+footer
+    height: 60px
+    background-color: $dark_blue
+    color: $background_grey
+    display: flex
+    margin: 0
+    justify-content: flex-end
+    p
+        align-self: center
+    a
+        color: $background_grey
+        font-size: 14px
+        text-decoration: none
+        margin: 0 10px
+        transition-duration: 0.3s
+        padding: 22px 10px
+        min-width: 60px
+        text-align: center
+    a:hover
+        background-color: lighten($dark_blue, 10%)
+
+body
+    height: 521px
+    margin: 0
+    overflow: auto
+
+select
+    width: 300px
+    font-size: 18px
+    outline: none
+    border: none
+    background-color: $dark_blue
+    color: white
+    border-radius: 3px
+    padding: 5px 10px
+    transition-duration: 0.3s
+option
+    color: black
+    background-color: white
+    transition-duration: 0.3s
+    border: black solid 1px
+
+.analytic-main__body
+    display: flex
+    .analytic-main__solution
+        display: flex
+        flex-direction: column
+        width: 600px
+        border-right: 1px solid $dark_blue
+        padding-top: 20px
+        overflow-y: auto
+        p
+            margin: 0
+            padding: 0
+            text-align: center
+        .analytic-main__number
+            width: 40px
+        .analytic-main__alts
+            width: 400px
+        .analytic-main__weights
+            width: 100px
+        .analytic-main__ranks
+            width: 60px
+        .analytic-main__header-row
+            display: flex
+            justify-content: flex-start
+            border-top: 3px $dark_blue solid
+            border-bottom: 3px $dark_blue solid
+            align-items: center
+            padding: 20px 0px
+            font-weight: bold
+        .analytic-main__row
+            display: flex
+            justify-content: flex-start
+            align-items: center
+            margin-top: 20px
+    .analytic-main__selector
+        padding: 10px 20px
+        select
+            width: 300px
+            font-size: 18px
+            outline: none
+            border: none
+            background-color: $dark_blue
+            color: white
+            border-radius: 3px
+            padding: 5px 10px
+            transition-duration: 0.3s
+        option
+            color: black
+            background-color: white
+            transition-duration: 0.3s
+            border: black solid 1px
+
+
+.new-problem__input
+    border-top: black solid 1px
+    border-bottom: black solid 1px
+    margin-top: 20px
+    padding: 10px 30px
+    display: flex
+    align-items: center
+    input
+        width: 500px
+    label
+        display: inline-block
+        width: 150px
+    textarea
+        display: inline-block
+        font-family: sans-serif
+        padding: 2px 3px
+        width: 500px
+        height: 60px
+        resize: none
+        outline: none
+.new-problem__alts
+    padding: 20px 30px
+    display: flex
+    flex-direction: column
+    overflow-y: auto
+    .new-problem__alt
+        margin: 10px 0
+        input
+            width: 500px
+        p
+            margin: 0
+            width: 20px
+            display: inline-block
+            margin-right: 20px
+    .new-problem__buttons
+        display: flex
+        margin-top: 20px
+        justify-content: space-around
+        width: 520px
+        button
+            background-color: $dark_blue
+            border: 1px black solid
+            color: white
+            width: 65px
+            height: 30px
+            outline: none
+            border-radius: 5px
+            transition-duration: 0.3s
+        button:hover
+            background-color: lighten($dark_blue, 10%)
+
+.expert-control
+    h2
+        margin: 30px 30px 0px 30px
+
+    ul
+        list-style-type: none
+        margin-block-start: 0
+        margin-block-end: 0
+        margin-inline-start: 0
+        margin-inline-end: 0
+        padding-inline-start: 0
+
+        padding: 30px 0
+
+        li
+            padding: 10px 30px
+            font-size: 24px
+            font-weight: lighter
+            transition-duration: 0.3s
+            border-top: 1px $background_grey solid
+            border-bottom: 1px $background_grey solid
+            display: flex
+            justify-content: space-between
+            align-items: center
+            p
+                margin: 0
+        li:hover
+            background-color: #c4c4c4
+            border-top: 1px #c4c4c4 solid
+            border-bottom: 1px #c4c4c4 solid 
+        .active
+            background-color: #c4c4c4
+            border-top: 1px black solid
+            border-bottom: 1px black solid
+        .active:hover
+            border-top: 1px black solid
+            border-bottom: 1px black solid
+
+.new-expert
+    .new-expert__login
+        margin-top: 30px
+        padding: 15px 30px
+        border-top: 1px solid black
+        border-bottom: 1px solid black
+        p
+            display: inline-block
+            margin: 0 20px 0 0
+
+    ul
+        list-style-type: none
+        margin-block-start: 0
+        margin-block-end: 0
+        margin-inline-start: 0
+        margin-inline-end: 0
+        padding-inline-start: 0
+    .new-expert__problem-header
+        display: flex
+        p
+            margin: 20px 30px
+        #task
+            width: 600px
+    .new-expert__problem
+        display: flex
+        align-items: center
+        .competence
+            width: 20px
+            margin-left: 70px
+        .task
+            width: 600px
+            margin: 20px 30px
+
+.expert-main__body
+    display: flex
+    .expert-main__problem
+        width: 500px
+        padding: 10px 30px
+        border-right: solid 3px black
+        .expert-main__problem-desription
+            p
+                overflow: auto
+
+    .expert-main__alts
+        padding: 10px 30px
+        ul
+            overflow: auto
+
+.expert-analysis__problem-description
+    padding: 10px 30px
+    border-bottom: solid $dark_blue 2px
+    height: 300px
+    .description
+        p
+            overflow-y: auto
+
+.expert-analysis__dialog-window
+    display: flex
+    flex-direction: column
+    align-items: stretch
+    .move
+        display: flex
+        justify-content: space-between
+        border-bottom: solid $dark_blue 1px
+        div
+            width: 230px
+            display: flex
+            justify-content: center
+            align-items: stretch
+            button
+                width: 100px
+                background: none
+                border: none
+                outline: none
+                transition-duration: 0.3s
+            button:hover
+                background-color: darken($background_grey, 20%)
+    .expert-analysis__choose-block
+        display: flex
+        justify-content: space-between
+        padding: 0 30px
+        height: 148px
+        div
+            width: 200px
+            text-align: center
+            padding: 30px 10px
+            transition-duration: 0.3s
+        div:hover
+            background-color: darken($background_grey, 20%)
+        .active
+            background: lighten($dark_blue, 50%)
+
+
+.percent-analysis
+    a[disabled]
+        display: none
+    ul
+        padding: 20px 30px
+        list-style-type: none
+        margin-block-start: 0
+        margin-block-end: 0
+        margin-inline-start: 0
+        margin-inline-end: 0
+        // padding-inline-start: 0
+        li
+            display: flex
+            justify-content: space-between
+            div
+                display: flex
+            .alt
+                display: flex
+                justify-content: space-between
+                width: 600px
+            button
+                width: 50px
+                background: none
+                border: none
+                outline: none
+                transition-duration: 0.3s
+            button:hover
+                background-color: darken($background_grey, 20%)
+
+
+.rank-analysis__dialog-window
+    display: flex
+    flex-direction: column
+    align-items: stretch
+    .move
+        display: flex
+        justify-content: space-between
+        border-bottom: solid $dark_blue 1px
+        div
+            width: 230px
+            display: flex
+            justify-content: center
+            align-items: stretch
+            button
+                width: 100px
+                background: none
+                border: none
+                outline: none
+                transition-duration: 0.3s
+            button:hover
+                background-color: darken($background_grey, 20%)
+    .rank-analysis__choose-block
+        display: flex
+        justify-content: space-between
+        padding: 0 30px
+        height: 80px
+        div
+            width: 200px
+            text-align: center
+            padding: 30px 10px
+            transition-duration: 0.3s
+        div:hover
+            background-color: darken($background_grey, 20%)
+        .active
+            background: lighten($dark_blue, 50%)
+    .alt
+        width: 550px
+
+.percent-analysis
+    .switcher
+        display: flex
+        align-items: center
+        justify-content: space-around
+    ul
+        padding: 0
+        li
+            transition-duration: 0.3s
+            padding: 0 30px    
+            display: flex
+            justify-content: flex-start
+            p
+                margin-right: 20px
+        li:hover
+            background-color: darken($background_grey, 20%)
+        .current
+            background-color: lighten($dark_blue, 50%)
+
+
+.expert-analysis__dialog-window
+    display: flex
+    flex-direction: column
+    align-items: stretch
+    .move
+        display: flex
+        justify-content: space-between
+        border-bottom: solid $dark_blue 1px
+        div
+            width: 230px
+            display: flex
+            justify-content: center
+            align-items: stretch
+            button
+                width: 100px
+                background: none
+                border: none
+                outline: none
+                transition-duration: 0.3s
+            button:hover
+                background-color: darken($background_grey, 20%)
+    .full-expert-analysis__choose-block
+        display: flex
+        justify-content: space-between
+        padding: 0 30px
+        height: 148px
+        p
+            text-align: center
+            padding: 25px 0
+            width: 240px
+            background: lighten($dark_blue, 50%)
+            border-radius: 10px
+        div
+            width: 200px
+            text-align: center
+            padding: 30px 10px
+            transition-duration: 0.3s
+            display: flex
+            justify-content: center
+            p
+                padding: 35px
+                margin: 0 30px
+                background: none
+
+.auth
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    background-color: $background_grey
+    padding-top: 200px
+    display: flex
+    align-items: center
+    flex-direction: column
+    text-align: center
+    .auth__form
+        background-color: $dark_blue
+        color: white
+        padding: 20px 30px
+        border-radius: 10px
+        height: 200px
+        width: 300px
+    input
+        margin: 0 0 30px 0
+    button
+        margin-left: 10px
+        text-decoration: none
+        color: black
+        padding: 8px 20px
+        background-color: $background_grey
+        outline: none
+        border: none
+        transition-duration: 0.3s
+        border-radius: 5px
+    button:hover
+        background-color: darken($background_grey, 30%)
+    a
+        text-decoration: none
+        color: black
+        padding: 8px 20px
+        background-color: $background_grey
+        transition-duration: 0.3s
+        border-radius: 5px
+    a:hover
+        background-color: darken($background_grey, 30%)
+    
+    .error
+        margin-top: 20px
+        color: darken(red, 10%)
